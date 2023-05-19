@@ -43,7 +43,7 @@ app.get("/", (req, res) => {
 
 // Database connection
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => {
+mongoose.connect('mongodb+srv://admin:admin@cluster0.8sykgcj.mongodb.net/project', { useNewUrlParser: true }, () => {
     console.log("Connection to database sucessfull");
 });
 
